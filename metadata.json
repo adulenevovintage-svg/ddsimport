@@ -1,0 +1,6 @@
+{
+  "name": "Dawit Desalegn Shiferaw Heavy Machinery",
+  "description": "Ethiopia's premier heavy machinery company specializing in excavator rentals with operators, machinery sales, and global import services for mining, construction, and road building.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
