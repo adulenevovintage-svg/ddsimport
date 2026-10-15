@@ -29,6 +29,11 @@ import {
   Eye
 } from 'lucide-react';
 
+import heroExcavatorMining from './assets/images/hero_excavator_mining_1792032662899.jpg';
+import excavatorFleetYard from './assets/images/excavator_fleet_yard_1792032664309.jpg';
+import excavatorRoadConstruction from './assets/images/excavator_road_construction_1792032664743.jpg';
+import machinerySalesShowroom from './assets/images/machinery_sales_showroom_1792032679841.jpg';
+
 interface MachineryItem {
   id: string;
   name: string;
@@ -51,7 +56,7 @@ const MACHINERY_DATA: MachineryItem[] = [
     category: 'excavator',
     brand: 'Caterpillar',
     model: 'CAT 336',
-    image: '/src/assets/images/hero_excavator_mining_1792032662899.jpg',
+    image: heroExcavatorMining,
     operatingWeight: '36,000 kg',
     bucketCapacity: '2.2 m³',
     enginePower: '311 HP',
@@ -65,7 +70,7 @@ const MACHINERY_DATA: MachineryItem[] = [
     category: 'excavator',
     brand: 'Komatsu',
     model: 'PC200-8',
-    image: '/src/assets/images/excavator_fleet_yard_1792032664309.jpg',
+    image: excavatorFleetYard,
     operatingWeight: '20,200 kg',
     bucketCapacity: '1.0 m³',
     enginePower: '148 HP',
@@ -79,7 +84,7 @@ const MACHINERY_DATA: MachineryItem[] = [
     category: 'excavator',
     brand: 'Volvo',
     model: 'EC210B',
-    image: '/src/assets/images/excavator_road_construction_1792032664743.jpg',
+    image: excavatorRoadConstruction,
     operatingWeight: '21,500 kg',
     bucketCapacity: '1.1 m³',
     enginePower: '159 HP',
@@ -93,7 +98,7 @@ const MACHINERY_DATA: MachineryItem[] = [
     category: 'bulldozer',
     brand: 'Caterpillar',
     model: 'D8T',
-    image: '/src/assets/images/machinery_sales_showroom_1792032679841.jpg',
+    image: machinerySalesShowroom,
     operatingWeight: '38,200 kg',
     bucketCapacity: 'U-Blade 8.7 m³',
     enginePower: '354 HP',
@@ -107,7 +112,7 @@ const MACHINERY_DATA: MachineryItem[] = [
     category: 'loader',
     brand: 'JCB',
     model: '3CX',
-    image: '/src/assets/images/excavator_fleet_yard_1792032664309.jpg',
+    image: excavatorFleetYard,
     operatingWeight: '8,135 kg',
     bucketCapacity: '1.0 m³ loader / 0.3 m³ backhoe',
     enginePower: '91 HP',
@@ -121,7 +126,7 @@ const MACHINERY_DATA: MachineryItem[] = [
     category: 'grader',
     brand: 'Caterpillar',
     model: '140K',
-    image: '/src/assets/images/machinery_sales_showroom_1792032679841.jpg',
+    image: machinerySalesShowroom,
     operatingWeight: '15,555 kg',
     bucketCapacity: 'Moldboard 3,658 mm',
     enginePower: '185 HP',
@@ -640,7 +645,7 @@ export default function App() {
                 <div className="lg:col-span-6">
                   <div className="relative rounded-2xl overflow-hidden border border-slate-200/90 shadow-md group">
                     <img 
-                      src="/src/assets/images/hero_excavator_mining_1792032662899.jpg" 
+                      src={heroExcavatorMining} 
                       alt="Heavy Excavators Working in Ethiopian Mining Site" 
                       className="w-full h-[440px] object-cover group-hover:scale-102 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -891,7 +896,7 @@ export default function App() {
                 <div className="relative">
                   <div className="rounded-2xl overflow-hidden border border-slate-200/80 shadow-md">
                     <img 
-                      src="/src/assets/images/excavator_road_construction_1792032664743.jpg" 
+                      src={excavatorRoadConstruction} 
                       alt="Excavator road construction in Ethiopia" 
                       className="w-full h-[460px] object-cover"
                       referrerPolicy="no-referrer"
@@ -952,7 +957,7 @@ export default function App() {
               </div>
               <div className="relative">
                 <img 
-                  src="/src/assets/images/excavator_fleet_yard_1792032664309.jpg" 
+                  src={excavatorFleetYard} 
                   alt="Machinery yard in Addis Ababa" 
                   className="rounded-2xl border border-slate-200/80 shadow-md w-full h-[420px] object-cover"
                   referrerPolicy="no-referrer"
@@ -1302,7 +1307,7 @@ export default function App() {
               </div>
               <div className="relative">
                 <img 
-                  src="/src/assets/images/machinery_sales_showroom_1792032679841.jpg" 
+                  src={machinerySalesShowroom} 
                   alt="Machinery sales depot" 
                   className="rounded-2xl border border-slate-200/80 shadow-md w-full h-[420px] object-cover"
                   referrerPolicy="no-referrer"
